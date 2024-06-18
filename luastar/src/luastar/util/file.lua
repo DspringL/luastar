@@ -4,7 +4,7 @@ https://github.com/keplerproject/luafilesystem
 --]]
 local _M = {}
 
-local lfs = require("lfs")
+local lfs = require("lfs_ffi")
 
 function _M.loadlua(file)
 	ngx.log(ngx.INFO, "加载lua文件：", file)
