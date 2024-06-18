@@ -22,7 +22,6 @@ fi
 pid=`ps -ef | grep nginx | grep -v app | grep -v grep | awk '{print $2}'`
 if [ "${pid}" ];then
   echo "Use profile: nginx-"${PROFILE}".conf stop"
-  curl -X GET 'http://localhost:900/shutdown/flush'
   nginx -s stop -p `pwd`/ -c conf/nginx-${PROFILE}.conf
 else
   echo "nginx not running nothing todo"
