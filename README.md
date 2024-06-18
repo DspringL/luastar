@@ -1,3 +1,10 @@
+# 需要安装
+
+```shell
+# 安装lfs
+sudo luarocks install luafilesystem
+```
+
 # luastar
 # 1. luastar简介
 ## 1.1 luastar是一个基于openresty的高性能高并发高效率http接口和web网站开发框架
